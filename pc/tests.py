@@ -7,6 +7,7 @@ Created on Fri May  1 17:53:47 2020
 """
 
 # -*- coding: utf-8 -*-
+from nbautoeval import PPrintRenderer
 from nbautoeval.exercise_function import ExerciseFunction
 from nbautoeval.args import Args
 
