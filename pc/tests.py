@@ -22,4 +22,5 @@ inputs_normes_a = [
 exo_normes_a = ExerciseFunction(
     normes_a,
     inputs_normes_a,
+    result_renderer=PPrintRenderer(width=30),
 )
