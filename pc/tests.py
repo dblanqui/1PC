@@ -22,6 +22,4 @@ inputs_normes_a = [
 exo_normes_a = ExerciseFunction(
     normes_a,
     inputs_normes_a,
-    layout='pprint',
-    layout_args=(40, 25, 25),
 )
