@@ -7,9 +7,8 @@ Created on Fri May  1 17:53:47 2020
 """
 
 # -*- coding: utf-8 -*-
-from nbautoeval import PPrintRenderer
-from nbautoeval.exercise_function import ExerciseFunction
-from nbautoeval.args import Args
+from nbautoeval import ExerciseFunction, Args
+from nbautoeval import CallRenderer, PPrintRenderer
 
 def normes_a(xA,yA,xB,yB):
     ax=xB-xA
@@ -23,5 +22,10 @@ inputs_normes_a = [
 exo_normes_a = ExerciseFunction(
     normes_a,
     inputs_normes_a,
-    result_renderer=PPrintRenderer(width=30),
+    # show function name in leftmost column
+    call_renderer=CallRenderer(show_function=True),
+    # use pprint to format results
+    result_renderer=PPrintRenderer(width=20),
+    font_size="90%",
+    header_font_size="120%",
 )
