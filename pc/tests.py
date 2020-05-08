@@ -17,8 +17,8 @@ def composantes_a(xA,yA,xB,yB):
 
 
 def soustraction_a_b(ax,ay,bx,by):
-	cx=ax-ay
-	cy=bx-by
+	cx=ax-bx
+	cy=ay-by
 	return(cx,cy)
 
 inputs_composantes_a = [
